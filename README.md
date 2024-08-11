@@ -1,7 +1,5 @@
 ##PRUEBA TÉCNICA
 
-Challenge - Creangel
-Challenge - Creangel
 Definición del problema
 Parte 1. Datos para la prueba
 Parte 2. Procesamiento de datos
@@ -9,7 +7,7 @@ Parte 3. Visualización
 Parte 4. Documentación
 Parte 5. Entrega y Extras
 Tecnologías
-Es normal en Creangel enfrentarse a desafíos de los que no sabemos mucho o a veces nada. Esta
+Es normal enfrentarse a desafíos de los que no sabemos mucho o a veces nada. Esta
 prueba tiene como objetivo presentar un reto similar en el que las/los ingenieros tienen que
 investigar una solución e implementarla en un periodo corto de tiempo. Ésta prueba también te sirve
 cómo candidato para saber si es un trabajo que te va a gustar o no.
@@ -27,7 +25,7 @@ Realizar un tablero (dashboard) empleando datos de API públicas y librerías de
    Realizar una función por cada una de las siguientes consultas:
    Antes de iniciar recuerda
    Si vas a poner el código en un repositorio público, no uses el
-   nombre de Creangel en ninguna parte.
+   nombre de en ninguna parte.
    Este es un reto de aprendizaje y no esperamos que conozcas las
    tecnologías necesarias para resolverlas. Esperamos que puedas
    aprender y aplicar.
