@@ -1,9 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import themeReducer from '../redux/ThemeState';
-
+import attractionsReducer from '../redux/AttractionsSlice';
+import presidentsReducer from '../redux/PresidentsSlice';
+import airportsReducer from '../redux/AirportsSlice';
 export const store = configureStore({
   reducer: {
-    projectsState: themeReducer,
+    attractionsState: attractionsReducer,
+    presidentsState: presidentsReducer,
+    airportsState: airportsReducer,
   },
 });
 
