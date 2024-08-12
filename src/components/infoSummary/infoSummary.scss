@@ -1,0 +1,59 @@
+@import '../../main.scss';
+
+.info-summary {
+  padding: 20px;
+  background-color: $background;
+  border: 1px solid $secondary;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-inline: 5vw;
+  margin-bottom: 5rem;
+
+  h2 {
+    font-size: 1.8rem;
+    color: $secondary;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: $primary;
+
+      th {
+        padding: 10px;
+        text-align: left;
+        color: $background;
+        font-weight: bold;
+        border-bottom: 2px solid $secondary;
+        text-transform: uppercase;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: $secondary;
+          color: $background;
+        }
+
+        &:nth-child(odd) {
+          background-color: $background;
+          color: $black;
+        }
+
+        &:hover {
+          background-color: lighten($secondary, 10%);
+        }
+
+        td {
+          padding: 10px;
+          border-bottom: 1px solid $secondary;
+        }
+      }
+    }
+  }
+}

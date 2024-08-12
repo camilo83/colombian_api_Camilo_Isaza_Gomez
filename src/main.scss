@@ -1,7 +1,15 @@
+$primary: #2e8b57;
+$secondary: #8b4513;
+$background: #faf3dd;
+$black: #222;
+
 * {
   box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 body {
   margin: 0rem;
+  background-color: $background;
 }

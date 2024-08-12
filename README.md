@@ -1,168 +1,110 @@
-##PRUEBA TÉCNICA
+# Prueba Técnica: React Application
 
-Definición del problema
-Parte 1. Datos para la prueba
-Parte 2. Procesamiento de datos
-Parte 3. Visualización
-Parte 4. Documentación
-Parte 5. Entrega y Extras
-Tecnologías
-Es normal enfrentarse a desafíos de los que no sabemos mucho o a veces nada. Esta
-prueba tiene como objetivo presentar un reto similar en el que las/los ingenieros tienen que
-investigar una solución e implementarla en un periodo corto de tiempo. Ésta prueba también te sirve
-cómo candidato para saber si es un trabajo que te va a gustar o no.
-Definición del problema
-Realizar un tablero (dashboard) empleando datos de API públicas y librerías de visualización.
+## Descripción del Proyecto
 
-1. Datos de la prueba
-   Empleando el servicio web API Colombia debe realizar consulta sobre las siguientes tres
-   entidades:
-   a. Presidentes (President)
-   b. Aeropuertos (Airport)
-   c. Atracciones turísticas (TouristicAttraction)
-   El enlace del servicio web es https://api-colombia.com/
-2. Procesamiento
-   Realizar una función por cada una de las siguientes consultas:
-   Antes de iniciar recuerda
-   Si vas a poner el código en un repositorio público, no uses el
-   nombre de en ninguna parte.
-   Este es un reto de aprendizaje y no esperamos que conozcas las
-   tecnologías necesarias para resolverlas. Esperamos que puedas
-   aprender y aplicar.
-   a. Realizar agrupamiento sobre la entidad Presidentes según el partido político.
-   Devolver una estructura de datos (array de objetos u objeto de objetos), con la lista
-   de partidos políticos y que esté ordenada descendentemente por el conteo de
-   presidentes electos.
-   b. Realizar agrupamiento sobre la entidad Atracciones Turísticas por departamento y
-   ciudad. Devolver una estructura de datos(array de objetos u objeto de objetos), con
-   los valores de los campos correspondientes y el conteo de las atracciones turísticas.
-   c. Realizar agrupamiento sobre la entidad Aeropuertos por departamento y ciudad.
-   Devolver una estructura de datos (array de objetos u objeto de objetos), con los
-   valores de los campos correspondientes y el conteo de los aeropuertos.
-   d. Realizar agrupamiento de la entidad Aeropuertos por Región, Departamento,
-   Ciudad y Tipo. Devolver una estructura de datos con los valores de los campos
-   correspondientes y el conteo de los aeropuertos. A continuación, se expone una
-   visualización de dicho agrupamiento.
-   A partir de este agrupamiento, generar otra estructura de datos de salida con el
-   siguiente formato:
-   {
-   "region": {
-   "andina": {
-   "departamento": {
-   "bogota": {
-   "ciudad":{
-   "bogota": {
-   "tipo":{
-   "militar": 1,
-   "nacional": 1
-   }
-   }
-   }
-   },
-   "cundinamarca": {
-   "ciudad":{
-   "madrid": {
-   "tipo":{
-   "nacional": 1
-   }
-   },
-   "guaimaral": {
-   "typo":{
-   "militar": 1
-   }
-   }
-   }
-   },
-   "caldas": {
-   "ciudad":{
-   "manizales": {
-   "tipo":{
-   "nacional": 1
-   }
-   },
-   "palestina": {
-   "tipo":{
-   "nacional": 1
-   }
-   }
-   }
+Este proyecto es una prueba técnica que utiliza conceptos básicos y avanzados de desarrollo frontend, específicamente con React. La aplicación consume datos de varias APIs públicas, utilizando Redux para optimizar el rendimiento y mejorar la experiencia del usuario mediante el manejo de estados globales.
 
-}
-}
-},
-"caribe": {
-"departamento": {
-"cordoba": {
-"ciudad":{
-"monterial": {
-"tipo":{
-"nacional": 1
-}
+## Estructura del Proyecto
 
-}
-}
-},
-"magdalena": {
-"ciudad":{
-"santa marta": {
-"tipo":{
-"internacional": 1,
-"nacional": 1
-}
-}
-}
-},
-"sucre": {
-"ciudad":{
-"sincelejo": {
-"tipo":{
-"nacional": 1
-}
-}
-}
-}
-}
-},
-.....
-}
-} 3. Visualización
-a. Crear una aplicación en React.
-b. La aplicación tendrá una única ruta con el nombre `/colombia_dash`.
-c. En la ruta se debe presentar un componente tipo Tab que permita seleccionar la
-vista de cada una de las entidades enunciadas en el ítem 1. Datos de la prueba. Un
-ejemplo del componente tipo Tab se muestra a continuación.
-d. Cada una de las vistas de las entidades debe mostrar:
-• Un componente que exponga la cantidad de registros existentes por cada
-entidad.
-• Un componente con todos los registros de cada entidad.
-• Un componente por cada una de las funciones solicitadas en cada entidad del
-ítem 2. Procesamiento.
-• En el caso del numeral d del ítem 2. Procesamiento, el componente debe
-mostrar la visualización de la estructura de datos final.
-• Un componente que muestre el tiempo de respuesta de la solicitud a la API (al
-solicitar los datos de cada entidad).
-Nota: el diseño de la visualización cada componente queda abierto al criterio del
-participante.
-Bonus: cualquier funcionalidad extra será considerada como un plus, se tomará en
-cuenta features relacionadas con experiencia de usuario y responsive. Se pueden
-agregar controles para cambiar el orden de los datos procesados (ascendente y
-descendente por nombre y conteo). Adicionalmente se puede agregar estadísticas
-que considere relevantes a partir de los datos obtenidos por cada entidad. 4. Documentación
-a. En la raíz del proyecto debe crear un archivo tipo markdown o readme donde
-indique los aspectos básicos de su proyecto y la forma de despliegue e inicialización. 5. Entrega y Extras
-a. Para La entrega de la prueba debe crear un repositorio en github y compartir el
-enlace. El nombre del repositorio debe tener el siguiente formato
-colombian*api*<tu nombre aquí>
-b. EXTRA: Dockerizar la aplicación, puede hacerlo utilizando un archivo \*.sh o con un
-guión de Docker-compose.
-Tecnologías
-a. Lenguaje: JavaScript
-b. Framework: ReactJS
-c. CSS: construye el estilo de los componentes según tu criterio. No utilizar frameworks ni
-librerías de CSS.
-d. No integrar librerías o plugins adicionales a los indicados. (No jquery ni otros frameworks
-para manejo de elementos html por identificador).
-Queremos saber hasta dónde puedes llegar en esta prueba. No es necesario que la termines para
-entregarla. Lo que realmente valoramos es el esfuerzo que pongas en resolver los desafíos y la
-manera en que abordas cada problema. ¡Tu dedicación y enfoque son lo que más nos importa!
-Muchos éxitos!
+### Flujo de la Aplicación
+
+1. **Inicio (`index.html`)**: Este es el punto de entrada de la aplicación. Aquí se hace referencia al componente principal (`Main`), y se definen aspectos importantes de SEO, como el nombre del sitio web y los metadatos.
+2. **`Main.tsx`**: Instancia el componente `App`.
+3. **`App.tsx`**: Contiene la configuración del enrutador (`Router`), que controla las rutas de la aplicación, como `/colombia_dash/`.
+4. **Páginas**:
+   - **HomePage**: Contiene un botón que redirige al Dashboard.
+   - **Dashboard**: Es donde se muestra la mayor parte del contenido y la lógica de la aplicación.
+
+### Scaffolding
+
+La estructura del proyecto dentro de la carpeta `src` está organizada de la siguiente manera:
+
+1. **`store`**:
+   - Contiene la configuración de Redux para el manejo de estados globales, lo que mejora el rendimiento al evitar recálculos innecesarios.
+2. **`utils`**:
+
+   - Contiene utilidades como `constants.ts`, donde se definen las configuraciones de la API y los endpoints:
+     - President
+     - Airport
+     - Touristic Attraction
+     - Region
+     - Department
+
+3. **`model`**:
+
+   - Define los modelos de datos que representan la estructura de las entidades obtenidas de la API. Se limitan a los campos necesarios para cada entidad, optimizando el rendimiento.
+
+4. **`services`**:
+
+   - Contiene los repositorios (`repos`) que manejan la lógica de acceso a datos para cada endpoint. En particular, para `Region` y `Department`, se utilizan repos adicionales para obtener nombres a partir de IDs.
+
+5. **`hooks`**:
+
+   - Implementa hooks personalizados para centralizar y reutilizar la lógica de obtención de datos en diferentes componentes.
+
+6. **`pages`**:
+
+   - Contiene las páginas principales de la aplicación, como `HomePage` y `Dashboard`.
+
+7. **`functions`**:
+
+   - Aquí se implementan las funciones necesarias para agrupar y procesar los datos según lo requerido en la prueba. Cada función se encuentra en su propio archivo para mantener una buena organización y separación de responsabilidades.
+
+8. **`components`**:
+
+   - Contiene los componentes reutilizables que conforman la interfaz de usuario. Cada entidad tiene su propio componente, además de componentes secundarios como `RecordCounter`, `AllRecords`, `InfoSummary`, y `Banner`.
+
+9. **`redux`**:
+   - Aquí se maneja la lógica de estado global con Redux, optimizando la eficiencia de la aplicación. Se evita recalcular datos ya procesados, almacenándolos en el estado global. Esto es especialmente útil para datos que requieren múltiples llamadas a la API, como la búsqueda de nombres de departamentos y regiones por ID.
+
+## Pruebas
+
+Al inicio del desarrollo, se realizaron pruebas unitarias básicas. Sin embargo, durante la fase de implementación de funcionalidades más avanzadas y la integración con la API, el enfoque en las pruebas se redujo debido a limitaciones de tiempo. A pesar de esto, la aplicación sigue una estructura que facilita la realización de pruebas adicionales en el futuro.
+
+## Despliegue
+
+Este repositorio incluye todos los archivos necesarios para el despliegue de la aplicación. El compilador utilizado es Vite.
+
+### Instrucciones de Despliegue
+
+1. Instalar las dependencias:
+
+   npm install
+
+2. Abrir en el navegador:
+
+   npm run dev
+
+## ¿Qué sigue?
+
+### Mejoras de Diseño y Experiencia de Usuario
+
+El próximo paso lógico para este proyecto es mejorar el diseño de la interfaz para ofrecer una mejor experiencia de usuario. Aunque la funcionalidad principal está implementada y el rendimiento ha sido optimizado mediante el uso de Redux, hay varias áreas donde el diseño podría mejorarse para hacer la aplicación más atractiva y fácil de usar.
+
+Algunas de las posibles mejoras incluyen:
+
+1. **Mejorar la Estética Visual**:
+
+   - Implementar un sistema de diseño más coherente con una paleta de colores mejor definida.
+   - Introducir una tipografía más moderna y legible.
+   - Añadir transiciones y animaciones sutiles para mejorar la interacción del usuario.
+
+2. **Hacer la Aplicación Más Responsiva**:
+
+   - Revisar y mejorar la disposición de los elementos para asegurar que se vean bien en todos los tamaños de pantalla, desde dispositivos móviles hasta pantallas grandes.
+   - Optimizar las tablas y listas para que se adapten mejor en pantallas pequeñas.
+
+3. **Mejorar la Navegación**:
+
+   - Añadir menús desplegables o una barra lateral que facilite el acceso a las diferentes secciones de la aplicación.
+   - Implementar breadcrumbs o indicaciones visuales para que el usuario sepa en qué parte de la aplicación se encuentra.
+
+4. **Accesibilidad**:
+
+   - Revisar los contrastes de color para asegurar que sean accesibles para personas con discapacidades visuales.
+   - Añadir soporte para navegación por teclado y mejorar la compatibilidad con lectores de pantalla.
+
+5. **Optimización de la Carga de Datos**:
+   - Implementar un sistema de carga diferida (lazy loading) para los componentes que no son necesarios inmediatamente, mejorando así el rendimiento inicial de la aplicación.
+
+Estas mejoras ayudarían a transformar la aplicación en una herramienta no solo funcional, sino también agradable de usar, lo que podría aumentar la satisfacción del usuario y la efectividad general de la aplicación.
